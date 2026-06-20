@@ -1915,6 +1915,111 @@
     .reminder-send:hover { background: #1ebe5a; }
     .reminder-note { font-size: .7rem; color: rgba(255,255,255,.4); text-align: center; }
 
+    /* ================================================================
+       MEJORAS MÓVILES — bloque unificado
+       ================================================================ */
+
+    /* 1. Fix de zoom-out / página no centrada:
+          overflow-x en html además de body impide que el navegador
+          reduzca el viewport al detectar contenido más ancho */
+    html { overflow-x: hidden; }
+
+    /* 2. Tap targets mínimos de 44 px para accesibilidad táctil */
+    .btn, .nav-drop-toggle, .burger,
+    .mob-menu a.mnav, .step-btn { min-height: 44px; }
+
+    /* 3. Navbar: logo más compacto en teléfonos pequeños */
+    @media (max-width: 390px) {
+      .hdr-inner     { padding: 8px 14px; }
+      .hdr-logo img  { height: 40px; }
+      .hdr-brand-name { font-size: .9rem; }
+      .hdr-brand-sub  { font-size: .6rem; }
+      .hdr-wa        { padding: 8px 12px; font-size: .82rem; }
+    }
+
+    /* 4. Hero: mejor escala en teléfonos pequeños (< 480 px) */
+    @media (max-width: 480px) {
+      .hero-wrap      { padding: 30px 16px 44px; gap: 28px; }
+      .hero-h1        { font-size: clamp(1.75rem, 8vw, 2rem); }
+      .hero-sub       { font-size: .93rem; }
+      .hero-logo-ring img { width: 120px; height: 120px; }
+      .hero-glow      { width: 150px; height: 150px; }
+      .hero-card-grid { max-width: 100%; }
+      .hero-btns > .btn { flex: 1 1 140px; justify-content: center; }
+      .hero-chips     { gap: 7px; }
+      .chip           { font-size: .78rem; padding: 6px 10px; }
+    }
+
+    /* 5. Padding de secciones más compacto en móvil */
+    @media (max-width: 640px) {
+      section         { padding: 52px 0; }
+      .container      { padding: 0 16px; }
+      .sec-title      { margin-bottom: 32px; }
+      .sec-title p    { font-size: .92rem; }
+    }
+
+    /* 6. Pasos (¿Cómo pedir?) — tarjetas más compactas */
+    @media (max-width: 480px) {
+      .step { padding: 22px 16px; }
+    }
+
+    /* 7. Grid de ofertas — 1 columna en pantallas muy pequeñas */
+    @media (max-width: 500px) {
+      #ofertas [style*="grid-template-columns"] {
+        grid-template-columns: 1fr !important;
+      }
+    }
+
+    /* 8. CTA final — botones apilados y centrados en móvil */
+    @media (max-width: 500px) {
+      .cta-btns { flex-direction: column; align-items: stretch; }
+      .cta-btns .btn { justify-content: center; }
+      .cta-num  { font-size: 1rem; }
+    }
+
+    /* 9. Carrusel de marcas: chips más pequeños y menos gap en móvil */
+    @media (max-width: 480px) {
+      #marcas          { padding: 40px 0; }
+      .brand-track     { gap: 12px; }
+      .brand-chip      { padding: 8px 14px; min-height: 48px; }
+      .brand-chip img  { height: 28px; max-width: 90px; }
+    }
+
+    /* 10. Stats contador: texto más pequeño en pantallas muy chicas */
+    @media (max-width: 380px) {
+      .stat-num    { font-size: 1.9rem; }
+      .stat-suffix { font-size: 1.3rem; }
+      .stat-label  { font-size: .7rem; }
+    }
+
+    /* 11. Sección equipo: asegurar que las fotos no se corten */
+    @media (max-width: 480px) {
+      .team-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+      .tphoto    { aspect-ratio: 1; }
+    }
+
+    /* 12. Info / Ubicación: mapa más alto en móvil para mejor usabilidad */
+    @media (max-width: 480px) {
+      .map-box iframe { height: 200px; }
+    }
+
+    /* 13. Menú móvil: ocupa todo el ancho en teléfonos muy estrechos */
+    @media (max-width: 380px) {
+      .mob-menu { padding: 12px 14px 16px; }
+      .mob-menu a.mnav { font-size: .9rem; padding: 10px 12px; }
+    }
+
+    /* 14. Carrusel de productos: ancho mínimo en pantallas muy chicas */
+    @media (max-width: 360px) {
+      .pcard { width: 145px; }
+    }
+
+    /* 15. Sección #salud y testimonios: padding correcto */
+    @media (max-width: 480px) {
+      .testi-card { padding: 18px 16px; }
+      .salud-card { padding: 18px 16px; }
+    }
+
   </style>
 </head>
 <body>
