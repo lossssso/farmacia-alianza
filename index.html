@@ -1821,15 +1821,14 @@
     .brand-chip {
       display: flex; align-items: center; gap: 10px;
       background: var(--white); border-radius: 12px;
-      padding: 12px 20px; border: 1.5px solid rgba(0,0,0,.07);
+      padding: 14px 22px; border: 1.5px solid rgba(0,0,0,.07);
       box-shadow: 0 2px 8px rgba(0,0,0,.06);
       white-space: nowrap; flex-shrink: 0;
       transition: box-shadow .2s, transform .2s;
     }
     .brand-chip:hover { box-shadow: 0 6px 20px rgba(0,0,0,.12); transform: translateY(-2px); }
-    .brand-chip { min-height: 64px; }
-    .brand-chip img { height: 40px; width: auto; max-width: 130px; object-fit: contain; display: block; }
-    .brand-chip span { font-size: .88rem; font-weight: 800; color: var(--navy); }
+    .brand-chip .bc-ico { font-size: 1.3rem; line-height: 1; }
+    .brand-chip .bc-lbl { font-size: .88rem; font-weight: 800; color: var(--navy); }
     .brand-ico {
       width: 32px; height: 32px; border-radius: 8px; flex-shrink: 0;
       display: flex; align-items: center; justify-content: center;
@@ -2685,31 +2684,33 @@
 <section id="marcas" aria-labelledby="marcas-h2">
   <div class="container" style="margin-bottom:28px">
     <div class="sec-title rev">
-      <h2 id="marcas-h2">Marcas disponibles</h2>
-      <p>Venezolanas e internacionales — siempre las mejores opciones para tu salud</p>
+      <h2 id="marcas-h2">Lo que encontrarás aquí</h2>
+      <p>Medicamentos, vitaminas, cuidado personal y mucho más — todo en un solo lugar</p>
     </div>
   </div>
   <div class="brand-track-wrap">
     <div class="brand-track">
-      <div class="brand-chip"><img src="logos/lasante.png" alt="La Santé · Pharmetique Labs"></div>
-      <div class="brand-chip"><img src="logos/lab-vargas.png" alt="Laboratorios Vargas"></div>
-      <div class="brand-chip"><img src="logos/bayer.png" alt="Bayer"></div>
-      <div class="brand-chip"><img src="logos/pfizer.png" alt="Pfizer"></div>
-      <div class="brand-chip"><img src="logos/sanofi.png" alt="Sanofi"></div>
-      <div class="brand-chip"><img src="logos/novartis.png" alt="Novartis"></div>
-      <div class="brand-chip"><img src="logos/abbott.png" alt="Abbott"></div>
-      <div class="brand-chip"><img src="logos/msd.png" alt="MSD · Merck"></div>
-      <div class="brand-chip"><img src="logos/gsk.png" alt="GSK"></div>
+      <div class="brand-chip"><span class="bc-ico">💊</span><span class="bc-lbl">Medicamentos</span></div>
+      <div class="brand-chip"><span class="bc-ico">🧴</span><span class="bc-lbl">Vitaminas</span></div>
+      <div class="brand-chip"><span class="bc-ico">🤧</span><span class="bc-lbl">Antigripales</span></div>
+      <div class="brand-chip"><span class="bc-ico">❤️</span><span class="bc-lbl">Cardiología</span></div>
+      <div class="brand-chip"><span class="bc-ico">👶</span><span class="bc-lbl">Pediatría</span></div>
+      <div class="brand-chip"><span class="bc-ico">🩺</span><span class="bc-lbl">Primeros auxilios</span></div>
+      <div class="brand-chip"><span class="bc-ico">🌿</span><span class="bc-lbl">Naturales</span></div>
+      <div class="brand-chip"><span class="bc-ico">🦷</span><span class="bc-lbl">Higiene dental</span></div>
+      <div class="brand-chip"><span class="bc-ico">🧠</span><span class="bc-lbl">Sistema nervioso</span></div>
+      <div class="brand-chip"><span class="bc-ico">💉</span><span class="bc-lbl">Inyectables</span></div>
       <!-- duplicate for seamless loop -->
-      <div class="brand-chip"><img src="logos/lasante.png" alt="La Santé · Pharmetique Labs"></div>
-      <div class="brand-chip"><img src="logos/lab-vargas.png" alt="Laboratorios Vargas"></div>
-      <div class="brand-chip"><img src="logos/bayer.png" alt="Bayer"></div>
-      <div class="brand-chip"><img src="logos/pfizer.png" alt="Pfizer"></div>
-      <div class="brand-chip"><img src="logos/sanofi.png" alt="Sanofi"></div>
-      <div class="brand-chip"><img src="logos/novartis.png" alt="Novartis"></div>
-      <div class="brand-chip"><img src="logos/abbott.png" alt="Abbott"></div>
-      <div class="brand-chip"><img src="logos/msd.png" alt="MSD · Merck"></div>
-      <div class="brand-chip"><img src="logos/gsk.png" alt="GSK"></div>
+      <div class="brand-chip"><span class="bc-ico">💊</span><span class="bc-lbl">Medicamentos</span></div>
+      <div class="brand-chip"><span class="bc-ico">🧴</span><span class="bc-lbl">Vitaminas</span></div>
+      <div class="brand-chip"><span class="bc-ico">🤧</span><span class="bc-lbl">Antigripales</span></div>
+      <div class="brand-chip"><span class="bc-ico">❤️</span><span class="bc-lbl">Cardiología</span></div>
+      <div class="brand-chip"><span class="bc-ico">👶</span><span class="bc-lbl">Pediatría</span></div>
+      <div class="brand-chip"><span class="bc-ico">🩺</span><span class="bc-lbl">Primeros auxilios</span></div>
+      <div class="brand-chip"><span class="bc-ico">🌿</span><span class="bc-lbl">Naturales</span></div>
+      <div class="brand-chip"><span class="bc-ico">🦷</span><span class="bc-lbl">Higiene dental</span></div>
+      <div class="brand-chip"><span class="bc-ico">🧠</span><span class="bc-lbl">Sistema nervioso</span></div>
+      <div class="brand-chip"><span class="bc-ico">💉</span><span class="bc-lbl">Inyectables</span></div>
     </div>
   </div>
 </section>
